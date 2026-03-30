@@ -44,17 +44,14 @@ This section presents the visual proof of both the model's clinical accuracy and
 ### Model Accuracy (Clinical Validation)
 The trained Neural Network achieved high precision in distinguishing between malignant and benign tumors.
 
-
-<img width="505" height="470" alt="confusion_matrix" src="https://github.com/user-attachments/assets/b202aba7-cac1-4d94-9f07-b49d9ec99d04" />
-
+<img width="505" height="470" alt="matrix" src="https://github.com/user-attachments/assets/a9b784c3-a336-4c0c-823a-2158f66f84ed" />
 
 * **Figure 1: Confusion Matrix.** This matrix (with Portuguese labels) validates the model's performance on the 106 test patients. Legend: `Maligno` = Malignant, `Benigno` = Benign, `Predito` = Predicted, `Real` = True.
 
 ### Mathematical Parity (Hardware Validation)
 **This is the critical engineering milestone of the project.** The graph below plots the absolute error between the Keras backend output and our custom-built matrix algebra implementation.
 
-<img width="1089" height="490" alt="error_graph" src="https://github.com/user-attachments/assets/a7b9920e-66d8-4f14-9df2-a3ad4bb37e9f" />
-
+<img width="1089" height="490" alt="error" src="https://github.com/user-attachments/assets/9b9a3e72-a292-44c5-8aff-7e95ab341e73" />
 
 * **Figure 2: Parity Error Analysis.** This plot shows the absolute difference in predictions for all 106 test patients. The error is consistently below $10^{-7}$, proving that our mathematical implementation (destined for FPGA) is computationally identical to the high-level framework with negligible noise due to floating-point rounding.
 
