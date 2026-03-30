@@ -51,7 +51,7 @@ The trained Neural Network achieved high precision in distinguishing between mal
 ### Mathematical Parity (Hardware Validation)
 **This is the critical engineering milestone of the project.** The graph below plots the absolute error between the Keras backend output and our custom-built matrix algebra implementation.
 
-<img width="1089" height="490" alt="error" src="https://github.com/user-attachments/assets/9b9a3e72-a292-44c5-8aff-7e95ab341e73" />
+<img width="1089" height="490" alt="error_a" src="https://github.com/user-attachments/assets/8bd25c31-36b1-4e79-a2cf-c895cde18aa2" />
 
 * **Figure 2: Parity Error Analysis.** This plot shows the absolute difference in predictions for all 106 test patients. The error is consistently below $10^{-7}$, proving that our mathematical implementation (destined for FPGA) is computationally identical to the high-level framework with negligible noise due to floating-point rounding.
 
