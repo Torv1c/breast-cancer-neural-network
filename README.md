@@ -7,6 +7,9 @@ While the dataset focuses on Breast Cancer prediction (Malignant/Benign) to prov
 
 This project highlights skills in **Edge AI, Model Quantization, Matrix Mathematics, and System Integration.**
 
+> ### 📌 A Note on Reproducibility and Privacy
+> *Please note: This repository contains a streamlined, reproducible version of my main ongoing research project. To preserve the privacy of the original raw datasets, proprietary backup scripts, and specific hyperparameters intended for future academic publication, this public version utilizes the built-in `Scikit-Learn` breast cancer dataset. This ensures that any engineer or recruiter can clone, run, and validate the Hardware/VHDL synthesis logic instantly, without needing external CSV dependencies, while demonstrating the core methodology of the original work.*
+
 ## Tech Stack
 * **AI & Data Science:** `Python`, `TensorFlow/Keras`, `Scikit-Learn`, `NumPy`, `Pandas`
 * **Hardware Targeting:** Fixed-Point Quantization (Q2.14 format), VHDL Testbench Generation, Custom Adapter Patterns (`.pkl` serialization).
